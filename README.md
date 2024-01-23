@@ -22,7 +22,7 @@ I have no clue at the moment...
 ### Windows
 
 This codebase requires Python 3 and the libraries `pyserial` and `pynput`. You can run both (requires pip to be installed):
-'''
+```
 pip install pyserial
 pip install pynput
-'''
+```
