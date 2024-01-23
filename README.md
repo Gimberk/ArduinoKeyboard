@@ -14,7 +14,7 @@ I have no clue at the moment...
 ### Windows
 
 1. Use the diagram **(coming soon)** and wire up your keyboard
-2. Use the Arduino IDE to upload the [Keyboard Listener Code](src/KeyboardListener.ino) to your Arduino UNO: [Quick Tutorial](https://www.youtube.com/watch?v=xQfC72VeV7Y)
+2. Use the Arduino IDE to upload the [Keyboard Listener Code](src/KeyboardListener/KeyboardListener.ino) to your Arduino UNO: [Quick Tutorial](https://www.youtube.com/watch?v=xQfC72VeV7Y)
 3. Run the [Start](out/start.exe) file
 
 ## Requirments and Building for Development
