@@ -14,10 +14,10 @@ const int nukeButton = 4;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(aButton, INPUT);
-  pinMode(bButton, INPUT);
-  pinMode(spaceButton, INPUT);
-  pinMode(nukeButton, INPUT);
+  pinMode(aButton, INPUT_PULLUP);
+  pinMode(bButton, INPUT_PULLUP);
+  pinMode(spaceButton, INPUT_PULLUP);
+  pinMode(nukeButton, INPUT_PULLUP);
 }
 
 void loop(){
@@ -66,11 +66,12 @@ void loop(){
   lastButtonState4 = ButtonState4;
 
   ButtonState5 = digitalRead(spaceButton);
-  if (ButtonState5 == lastButtonState5)
+  if (ButtonState5 != lastButtonState5)
   {
     if (ButtonState5 == LOW)
     {
       Serial.println(' ');
     }
   }
+  lastButtonState5 = ButtonState5;
 }
