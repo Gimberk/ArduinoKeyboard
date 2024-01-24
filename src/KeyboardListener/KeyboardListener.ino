@@ -1,3 +1,8 @@
+// Courtesy of James Fleming and James Burns - Jan, 2024
+
+#define joyX A1
+#define joyY A0
+
 int ButtonState2 = 0;
 int lastButtonState2 = 0;
 int ButtonState3 = 0;
@@ -21,6 +26,11 @@ void setup() {
 }
 
 void loop(){
+  // Mouse:
+  const int xValue = analogRead(joyX);
+  const int yValue = analogRead(joyY);
+  // Buttons:
+
   ButtonState2 = digitalRead(aButton);
   if(ButtonState2 != lastButtonState2)
   {
